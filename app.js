@@ -15,6 +15,7 @@ var index = require('./routes/index');
 var users = require('./routes/users');
 var gatos = require('./routes/gato');
 var omeka = require('./routes/omeka');
+var items = require('./routes/items');
 var d3 = require('./routes/d3');
 // **** PARA AGREGAR UNA NUEVA RUTA  ****
 // descomente y cambie los valores de la siguiente línea
@@ -55,6 +56,8 @@ app.use('/hola', users);
 app.use('/gatos', gatos);
 app.use('/omeka', omeka);
 app.use('/d3', d3);
+app.use('/items', items);
+
 // **** PARA AGREGAR UNA NUEVA RUTA  ****
 // descomente y cambie los valores de la siguiente línea
 // app.use('/DONDE?', NOMBRE_RUTA);
